@@ -8,17 +8,17 @@ void main() {
 
     String[][] opciones = {
             {"int", "char", "boolean", "String"},
-            {"==", "equals()", "compare()", "="},
+            {"==", "equals()", "compare()", "=", "dowesetripla"},
             {"git add", "git status", "git commit", "git init"}
     };
 
     String[] correctas = {"d", "b", "c"};
 
-    String[] letras = {"a", "b", "c", "d"};
+    String[] letras = {"a", "b", "c", "d", "e", "f", "g", "h"};
 
     for (int i = 0; i < preguntas.length; i++) {
         System.out.println(preguntas[i]);
-        for (int j = 0; j < letras.length; j++) {
+        for (int j = 0; j < opciones[i].length; j++) {
             System.out.println(letras[j] + ". " + opciones[i][j]);
         }
 
