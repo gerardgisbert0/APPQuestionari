@@ -15,7 +15,11 @@ void main() {
             "Que comando de Git muestra el historial de commits?",
             "Que hace el comando git init?",
             "Que devuelve \"Hola\".length()?",
-            "Que metodo del Scanner lee una linea entera?"
+            "Que palabra clave se usa para heredar de una clase en Java?",
+            "Que metodo es el punto de entrada de un programa Java?",
+            "Que palabra clave impide que una variable cambie de valor?",
+            "Que simbolo se usa para comentar una sola linea en Java?",
+            "Que estructura de datos mantiene el orden de insercion y permite duplicados?",
     };
 
     String[][] opciones = {
@@ -33,7 +37,13 @@ void main() {
             {"git status", "git log", "git show", "git history"},
             {"Sube los cambios a GitHub", "Crea un repositorio nuevo", "Borra el repositorio", "Descarga un repositorio"},
             {"3", "4", "5"},
-            {"next()", "nextInt()", "nextLine()", "readLine()"}
+            {"next()", "nextInt()", "nextLine()", "readLine()"},
+            {"implements", "inherits", "super", "extends"},
+            {"start()", "run()", "main()", "init()"},
+            {"static", "const", "private", "final"},
+            {"//", "/*", "#", "--"},
+            {"Set", "Map", "List", "HashSet"},
+
     };
 
     String[] correctas = {"d", "b", "c", "c", "a", "a", "c", "c", "b", "b", "c", "b", "b", "b", "c"};
