@@ -36,6 +36,21 @@ void main() {
             "Cual es el resultado de 7 / 2 con enteros en Java?",
             "Que modificador de acceso permite acceder solo desde la propia clase?",
             "Que metodo de ArrayList devuelve el numero de elementos?",
+            "Que simbolos se usan para comentar varias lineas en Java?",
+            "Que palabra clave se refiere al objeto actual dentro de una clase?",
+            "Que tipo de dato usarias para guardar un solo caracter?",
+            "Como se obtiene el tamaño de un array llamado a?",
+            "Que palabra clave indica que un metodo no devuelve ningun valor?",
+            "Que operador se usa para comprobar si dos numeros son iguales?",
+            "Que devuelve \"Java\".charAt(0)?",
+            "Que clase de Java se usa para guardar pares clave-valor?",
+            "Que palabra clave se usa para declarar una clase que no se puede instanciar?",
+            "Que palabra clave se usa para que una clase implemente una interfaz?",
+            "Que operador incrementa una variable en 1?",
+            "Que devuelve Math.max(3, 8)?",
+            "Que metodo de String devuelve una parte del texto?",
+            "Que palabra clave hace que un atributo sea compartido por todas las instancias de la clase?",
+            "Que metodo del Scanner lee un numero entero?"
     };
 
     String[][] opciones = {
@@ -74,6 +89,21 @@ void main() {
             {"3.5", "4", "3", "2"},
             {"public", "protected", "private"},
             {"length", "count()", "length()", "size()"},
+            {"//", "#", "/* */", "<!-- -->"},
+            {"self", "current", "me", "this"},
+            {"char", "String", "int", "boolean"},
+            {"a.size()", "a.length()", "a.length", "a.count"},
+            {"void", "null", "empty", "none"},
+            {"=", "!=", "==", "=>"},
+            {"'a'", "'J'", "'v'", "'Java'"},
+            {"List", "Map", "Set", "Array"},
+            {"static", "final", "abstract", "void"},
+            {"extends", "inherits", "interface", "implements"},
+            {"i--", "i++", "i**", "i//"},
+            {"3", "11", "8", "5"},
+            {"substring()", "split()", "trim()", "replace()"},
+            {"final", "this", "static", "public"},
+            {"nextLine()", "readInt()", "nextInt()", "parseInt()"}
     };
 
     String[] correctas = {"d", "b", "c", "c", "a", "a", "c", "c", "b", "b", "c", "b", "b", "b", "c", "d", "c", "d", "a", "c", "c", "a", "c", "a", "a"};
