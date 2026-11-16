@@ -26,6 +26,16 @@ void main() {
             "Que tipo de dato guarda true o false?",
             "Cuanto vale 7 % 3 en Java?",
             "Que propiedad CSS cambia el tamaño de la letra?"
+            "Que valor tiene por defecto un atributo int sin inicializar en una clase?",
+            "Que metodo de String convierte el texto a mayusculas?",
+            "Que palabra clave se usa para lanzar una excepcion?",
+            "Que bloque se ejecuta siempre en un try-catch, haya o no excepcion?",
+            "Que clase se usa para leer datos por teclado?",
+            "Que estructura de datos no permite elementos duplicados?",
+            "Que hace la palabra clave break dentro de un bucle?",
+            "Cual es el resultado de 7 / 2 con enteros en Java?",
+            "Que modificador de acceso permite acceder solo desde la propia clase?",
+            "Que metodo de ArrayList devuelve el numero de elementos?",
     };
 
     String[][] opciones = {
@@ -54,6 +64,16 @@ void main() {
             {"int", "String", "boolean", "char"},
             {"1", "2", "2.33", "0"},
             {"font-size", "text-size", "size", "font-weight"}
+            {"null", "1", "0", "undefined"},
+            {"toUpper()", "upper()", "toUpperCase()", "capitalize()"},
+            {"raise", "throw", "throws", "catch"},
+            {"catch", "else", "default", "finally"},
+            {"Scanner", "Reader", "Keyboard", "Input"},
+            {"ArrayList", "HashSet", "LinkedList", "Vector"},
+            {"Salta a la siguiente iteracion", "Sale del bucle", "Reinicia el bucle", "Detiene el programa"}, // Sale del bucle
+            {"3.5", "4", "3", "2"},
+            {"public", "protected", "private"},
+            {"length", "count()", "length()", "size()"},
     };
 
     String[] correctas = {"d", "b", "c", "c", "a", "a", "c", "c", "b", "b", "c", "b", "b", "b", "c", "d", "c", "d", "a", "c", "c", "a", "c", "a", "a"};
