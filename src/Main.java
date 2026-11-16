@@ -25,7 +25,7 @@ void main() {
             "Que comando de Git sube los commits a GitHub?",
             "Que tipo de dato guarda true o false?",
             "Cuanto vale 7 % 3 en Java?",
-            "Que propiedad CSS cambia el tamaño de la letra?"
+            "Que propiedad CSS cambia el tamaño de la letra?",
             "Que valor tiene por defecto un atributo int sin inicializar en una clase?",
             "Que metodo de String convierte el texto a mayusculas?",
             "Que palabra clave se usa para lanzar una excepcion?",
@@ -78,14 +78,14 @@ void main() {
             {"git push", "git pull", "git commit", "git clone"},
             {"int", "String", "boolean", "char"},
             {"1", "2", "2.33", "0"},
-            {"font-size", "text-size", "size", "font-weight"}
+            {"font-size", "text-size", "size", "font-weight"},
             {"null", "1", "0", "undefined"},
             {"toUpper()", "upper()", "toUpperCase()", "capitalize()"},
             {"raise", "throw", "throws", "catch"},
             {"catch", "else", "default", "finally"},
             {"Scanner", "Reader", "Keyboard", "Input"},
             {"ArrayList", "HashSet", "LinkedList", "Vector"},
-            {"Salta a la siguiente iteracion", "Sale del bucle", "Reinicia el bucle", "Detiene el programa"}, // Sale del bucle
+            {"Salta a la siguiente iteracion", "Sale del bucle", "Reinicia el bucle", "Detiene el programa"},
             {"3.5", "4", "3", "2"},
             {"public", "protected", "private"},
             {"length", "count()", "length()", "size()"},
@@ -106,39 +106,29 @@ void main() {
             {"nextLine()", "readInt()", "nextInt()", "parseInt()"}
     };
 
-    String[] correctas = {"d", "b", "c", "c", "a", "a", "c", "c", "b", "b", "c", "b", "b", "b", "c", "d", "c", "d", "a", "c", "c", "a", "c", "a", "a"};
+    String[] correctas = {"d", "b", "c", "c", "a", "a", "c", "c", "b", "b", "c", "b", "b", "b", "c",
+            "d", "c", "d", "a", "c", "c", "a", "c", "a", "a",
+            "c", "c", "b", "d", "a", "b", "b", "c", "c", "d",
+            "c", "d", "a", "c", "a", "c", "b", "b", "c", "d", "b", "c", "a", "c", "c"};
 
     String[] letras = {"a", "b", "c", "d", "e", "f", "g", "h"};
 
     for (int i = 0; i < preguntas.length; i++) {
-        System.out.println(preguntas[i]);
-        for (int j = 0; j < opciones[i].length; j++) {
-            System.out.println(letras[j] + ". " + opciones[i][j]);
-        }
-
-        String respuesta = input.nextLine();
-
-        boolean valida = false;
-        for (int j = 0; j < opciones[i].length; j++) {
-            if (respuesta.equals(letras[j])) {
-                valida = true;
-            }
-        }
-
-        if (!valida) {
-            System.out.print("Respuesta no válida:");
+        String respuesta;
+        do {
+            System.out.println(preguntas[i]);
             for (int j = 0; j < opciones[i].length; j++) {
-                System.out.print(" " + letras[j]);
+                System.out.println(letras[j] + ". " + opciones[i][j]);
+            }
+
+            respuesta = input.nextLine();
+
+            if (respuesta.equals(correctas[i])) {
+                System.out.println("Respuesta correcta!");
+            } else {
+                System.out.println("Incorrecta, inténtalo otra vez.");
             }
             System.out.println();
-            return;
-        }
-
-        if (respuesta.equals(correctas[i])) {
-            System.out.println("Respuesta correcta!");
-        } else {
-            System.out.println("Respuesta incorrecta, la respuesta correcta es: " + correctas[i]);
-        }
-        System.out.println();
+        } while (!respuesta.equals(correctas[i]));
     }
 }
