@@ -15,11 +15,17 @@ void main() {
             "Que comando de Git muestra el historial de commits?",
             "Que hace el comando git init?",
             "Que devuelve \"Hola\".length()?",
+            "Que metodo del Scanner lee una linea entera?",
             "Que palabra clave se usa para heredar de una clase en Java?",
             "Que metodo es el punto de entrada de un programa Java?",
             "Que palabra clave impide que una variable cambie de valor?",
             "Que simbolo se usa para comentar una sola linea en Java?",
             "Que estructura de datos mantiene el orden de insercion y permite duplicados?",
+            "Que etiqueta HTML se usa para el titulo mas importante de la pagina?",
+            "Que comando de Git sube los commits a GitHub?",
+            "Que tipo de dato guarda true o false?",
+            "Cuanto vale 7 % 3 en Java?",
+            "Que propiedad CSS cambia el tamaño de la letra?"
     };
 
     String[][] opciones = {
@@ -43,10 +49,14 @@ void main() {
             {"static", "const", "private", "final"},
             {"//", "/*", "#", "--"},
             {"Set", "Map", "List", "HashSet"},
-
+            {"<h6>", "<title>", "<h1>", "<head>"},
+            {"git push", "git pull", "git commit", "git clone"},
+            {"int", "String", "boolean", "char"},
+            {"1", "2", "2.33", "0"},
+            {"font-size", "text-size", "size", "font-weight"}
     };
 
-    String[] correctas = {"d", "b", "c", "c", "a", "a", "c", "c", "b", "b", "c", "b", "b", "b", "c"};
+    String[] correctas = {"d", "b", "c", "c", "a", "a", "c", "c", "b", "b", "c", "b", "b", "b", "c", "d", "c", "d", "a", "c", "c", "a", "c", "a", "a"};
 
     String[] letras = {"a", "b", "c", "d", "e", "f", "g", "h"};
 
